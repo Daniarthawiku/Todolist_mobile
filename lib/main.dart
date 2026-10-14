@@ -56,7 +56,7 @@ class _MyHomePageState extends State<MyHomePage> {
   void dispose() {
     _textController.dispose();
     super.dispose();
-  } 
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -106,27 +106,34 @@ class _MyHomePageState extends State<MyHomePage> {
                     itemBuilder: (context, index) {
                       final todo = _todos[index];
 
-                      return CheckboxListTile(
-                        value: todo.isDone,
-                        onChanged: (bool? newValue) {
-                          _toggleTodo(index);
-                        },
-                        activeColor: Color(0xFF9CE6AE),
-                        title: Text(
-                          todo.title,
-                          style: TextStyle(
-                            fontFamily: 'Lato',
-                            fontSize: 20,
-                            decoration: todo.isDone
-                                ? TextDecoration.lineThrough
-                                : TextDecoration.none,
-                            color: todo.isDone ? Colors.grey : Colors.black,
-                            fontWeight: todo.isDone
-                                ? FontWeight.w300
-                                : FontWeight.w600,
+                      return Container(
+                        decoration: BoxDecoration(
+                          border: Border(
+                            bottom: BorderSide(color: Colors.black, width: 2.0),
                           ),
                         ),
-                        controlAffinity: ListTileControlAffinity.leading,
+                        child: CheckboxListTile(
+                          value: todo.isDone,
+                          onChanged: (bool? newValue) {
+                            _toggleTodo(index);
+                          },
+                          activeColor: Color(0xFF9CE6AE),
+                          title: Text(
+                            todo.title,
+                            style: TextStyle(
+                              fontFamily: 'Lato',
+                              fontSize: 20,
+                              decoration: todo.isDone
+                                  ? TextDecoration.lineThrough
+                                  : TextDecoration.none,
+                              color: todo.isDone ? Colors.grey : Colors.black,
+                              fontWeight: todo.isDone
+                                  ? FontWeight.w300
+                                  : FontWeight.w600,
+                            ),
+                          ),
+                          controlAffinity: ListTileControlAffinity.leading,
+                        ),
                       );
                     },
                   ),
