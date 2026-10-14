@@ -1,17 +1,9 @@
 # todolist_mobile
+daniartha wikus nugroho
+103022400119
+SE-48-04
 
-A new Flutter project.
+## Referensi
+https://dribbble.com/shots/22974248-To-do-list-and-task-overview-designed-with-Bruddle-UI-kit
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img width="557" height="1078" alt="image" src="https://github.com/user-attachments/assets/2b0b0286-b962-4ced-9b36-3503cb8276c7" />
